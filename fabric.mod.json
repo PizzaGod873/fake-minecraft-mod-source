@@ -1,0 +1,37 @@
+{
+	"schemaVersion": 1,
+	"id": "cyro-pvp",
+	"version": "1.0.0",
+	"name": "Cyro Pvp",
+	"description": "duplication",
+	"authors": [
+		"Gizz"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "MIT",
+	"icon": "assets/cyro-pvp/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.cyro.pvp.CyroPvp"
+		],
+		"client": [
+			"net.cyro.pvp.PvpModClient"
+		],
+		"fabric-datagen": [
+			"net.cyro.pvp.CyroPvpDataGenerator"
+		]
+	},
+	"depends": {
+		"fabricloader": ">=0.16.14",
+		"minecraft": "~1.21.5",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
